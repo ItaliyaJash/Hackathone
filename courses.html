@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - SKILLFORGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-circle">SF</div>
+                <span>SKILLFORGE</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link active">Courses</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="about.html" class="nav-link">About</a>
+                <button class="login-btn" onclick="toggleModal('loginModal')">Login</button>
+                <button class="signup-btn" onclick="toggleModal('signupModal')">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Section -->
+    <div class="course-details-content"></div>
+    <section id="courses" class="courses">
+        <div class="section-header">
+            <h2>Explore Courses</h2>
+            <p>Discover skills to advance your career and future</p>
+        </div>
+        <div class="course-filters">
+            <button class="filter-btn active">All Courses</button>
+            <button class="filter-btn">Technology</button>
+            <button class="filter-btn">Healthcare</button>
+            <button class="filter-btn">Agriculture</button>
+            <button class="filter-btn">Business</button>
+            <button class="filter-btn">Manufacturing</button>
+        </div>
+        <div class="course-grid">
+            <!-- Course cards will be dynamically populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Login/Signup Modals (same as index.html) -->
+    <div id="loginModal" class="modal">
+        <!-- Same login modal content as index.html -->
+        <div class="modal-content">
+            <h2>Login to SKILLFORGE</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="primary-btn">Login</button>
+            </form>
+            <button class="close-btn" onclick="toggleModal('loginModal')">Close</button>
+        </div>
+    </div>
+
+
+    <div id="signupModal" class="modal">
+        <!-- Same signup modal content as index.html -->
+        <div class="modal-content">
+            <h2>Create your SKILLFORGE account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="primary-btn">Create Account</button>
+            </form>
+            <button class="close-btn" onclick="toggleModal('signupModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <div class="company-logo">
+                        <div class="logo-circle">B</div>
+                        <span class="company-name">BrandName</span>
+                    </div>
+                    <p class="company-desc">
+                        Creating innovative solutions for a better tomorrow. Join us on our mission.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Services</a></li>
+                        <li><a href="#" class="footer-link">Products</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="icon" data-feather="mail"></i>
+                            <span>contact@example.com</span>
+                        </li>
+                        <li>
+                            <i class="icon" data-feather="phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="icon" data-feather="map-pin"></i>
+                            <span>123 Business Ave, Suite 100<br>New York, NY 10001</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media & Newsletter -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="icon" data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="icon" data-feather="github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="icon" data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="newsletter">
+                        <h4 class="newsletter-title">Subscribe to our newsletter</h4>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input" />
+                            <button type="submit" class="newsletter-button">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2025 BrandName. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="module" src="footer.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
