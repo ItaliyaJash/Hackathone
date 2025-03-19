@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Login/Signup Modals (same as index.html) -->
+    <div id="loginModal" class="modal">
+        <!-- Same login modal content as index.html -->
+        <div class="modal-content">
+            <h2>Login to SKILLFORGE</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="primary-btn">Login</button>
+            </form>
+            <button class="close-btn" onclick="toggleModal('loginModal')">Close</button>
+        </div>
+    </div>
+
+
+    <div id="signupModal" class="modal">
+        <!-- Same signup modal content as index.html -->
+        <div class="modal-content">
+            <h2>Create your SKILLFORGE account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="primary-btn">Create Account</button>
+            </form>
+            <button class="close-btn" onclick="toggleModal('signupModal')">Close</button>
+        </div>
+    </div>
+
+</body>
+</html>

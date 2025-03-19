@@ -19,8 +19,8 @@
                 <a href="courses.html" class="nav-link">Courses</a>
                 <a href="dashboard.html" class="nav-link">Dashboard</a>
                 <a href="about.html" class="nav-link">About</a>
-                <button class="login-btn" onclick="toggleModal('loginModal')">Login</button>
-                <button class="signup-btn" onclick="toggleModal('signupModal')">Sign Up</button>
+                <a href="login.html"><button class="login-btn" onclick="toggleModal('loginModal')">Login</button></a>
+                <a href="signin.html"><button class="signup-btn" onclick="toggleModal('signupModal')">Sign Up</button></a>
             </div>
         </div>
     </nav>
@@ -60,47 +60,6 @@
         </div>
     </section>
 
-    <!-- Login Modal -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <h2>Login to SKILLFORGE</h2>
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="loginEmail">Email</label>
-                    <input type="email" id="loginEmail" required>
-                </div>
-                <div class="form-group">
-                    <label for="loginPassword">Password</label>
-                    <input type="password" id="loginPassword" required>
-                </div>
-                <button type="submit" class="primary-btn">Login</button>
-            </form>
-            <button class="close-btn" onclick="toggleModal('loginModal')">Close</button>
-        </div>
-    </div>
-
-    <!-- Sign Up Modal -->
-    <div id="signupModal" class="modal">
-        <div class="modal-content">
-            <h2>Create your SKILLFORGE account</h2>
-            <form id="signupForm">
-                <div class="form-group">
-                    <label for="signupName">Full Name</label>
-                    <input type="text" id="signupName" required>
-                </div>
-                <div class="form-group">
-                    <label for="signupEmail">Email</label>
-                    <input type="email" id="signupEmail" required>
-                </div>
-                <div class="form-group">
-                    <label for="signupPassword">Password</label>
-                    <input type="password" id="signupPassword" required>
-                </div>
-                <button type="submit" class="primary-btn">Create Account</button>
-            </form>
-            <button class="close-btn" onclick="toggleModal('signupModal')">Close</button>
-        </div>
-    </div>
 
 
 
@@ -198,9 +157,6 @@
       <!-- </div> -->
       <script src="https://unpkg.com/feather-icons"></script>
       <script type="module" src="footer.js"></script>
-
-
-
 
     <script src="script.js"></script>
 </body>
