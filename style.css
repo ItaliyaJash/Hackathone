@@ -403,6 +403,9 @@ body {
     border: none;
     color: #666;
     cursor: pointer;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
 /* Responsive Design */
